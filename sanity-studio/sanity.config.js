@@ -2,13 +2,16 @@ import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
+import {sanityProjectID, sanityDataset, studioTitle} from './environment';
+
+console.log(sanityProjectID, sanityDataset);
 
 export default defineConfig({
   name: 'default',
-  title: 'Movie DB',
+  title: studioTitle,
 
-  projectId: '87usjenf',
-  dataset: 'production',
+  projectId: sanityProjectID,
+  dataset: sanityDataset || 'production',
 
   plugins: [
     deskTool(),
