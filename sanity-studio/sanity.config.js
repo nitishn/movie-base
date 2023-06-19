@@ -5,6 +5,7 @@ import {schemaTypes} from './schemas'
 import {sanityProjectID, sanityDataset, studioTitle} from './environment';
 
 console.log(sanityProjectID, sanityDataset);
+console.log(process.env.SANITY_STUDIO_PROJECT_ID);
 
 export default defineConfig({
   name: 'default',
