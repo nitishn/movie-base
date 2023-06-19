@@ -9,7 +9,7 @@ console.log(process.env.SANITY_STUDIO_PROJECT_ID);
 
 export default defineConfig({
   name: 'default',
-  title: studioTitle,
+  title: studioTitle + 'toast',
 
   projectId: sanityProjectID,
   dataset: sanityDataset || 'production',
